@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — ML Agro Foot SARL</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+  function sendMessage(e){
+    e.preventDefault();
+    alert('Formulaire soumis (exemple). Implémentez un backend pour recevoir les messages.');
+    document.getElementById('contactForm').reset();
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">ML Agro Foot</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="products.html">Produits</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="blog.html">Actualités</a></li>
+          <li><a href="contact.html" class="cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="padding:28px 0">
+    <h1>Contactez-nous</h1>
+    <p>Remplissez le formulaire ou contactez-nous via WhatsApp.</p>
+    <form id="contactForm" onsubmit="sendMessage(event)" style="max-width:640px;margin-top:12px">
+      <label>Nom complet</label>
+      <input type="text" name="name" required style="width:100%;padding:10px;border-radius:6px;border:1px solid #ddd;margin-top:6px">
+      <label style="margin-top:10px;display:block">Email</label>
+      <input type="email" name="email" required style="width:100%;padding:10px;border-radius:6px;border:1px solid #ddd;margin-top:6px">
+      <label style="margin-top:10px;display:block">Message</label>
+      <textarea name="message" rows="6" required style="width:100%;padding:10px;border-radius:6px;border:1px solid #ddd;margin-top:6px"></textarea>
+      <button class="btn" style="margin-top:12px">Envoyer</button>
+    </form>
+    <p style="margin-top:18px">WhatsApp direct: <a href="https://wa.me/2376XXXXXXXX">+237 6X XX XX XX</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>ML Agro Foot SARL</h4>
+        <p>Yaourts de soja • Vins • Jus naturels</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Tel / WhatsApp : +237 6X XX XX XX</p>
+        <p>Email : contact@mlagrofoot.com</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
